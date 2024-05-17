@@ -1,0 +1,26 @@
+---
+FormatStyle: file
+HeaderFilterRegex: ""
+Checks: [
+  -*,
+
+  # Syntax checks (naming conventions etc.)
+  readability-identifier-naming,
+  readability-inconsistent-declaration-parameter-name,
+  readability-misleading-indentation,
+  readability-non-const-parameter,
+]
+
+CheckOptions:
+  readability-identifier-naming.ClassCase: lower_case
+  readability-identifier-naming.StructCase: lower_case
+  readability-identifier-naming.EnumCase: lower_case
+  readability-identifier-naming.FunctionCase: lower_case
+  readability-identifier-naming.GlobalConstantCase: UPPER_CASE
+  readability-identifier-naming.MemberCase: lower_case
+  readability-identifier-naming.NamespaceCase: lower_case
+  readability-identifier-naming.ParameterCase: lower_case
+  readability-identifier-naming.TypedefCase: lower_case
+  readability-identifier-naming.TypeAliasCase: lower_case
+  readability-identifier-naming.UnionCase: lower_case
+  readability-identifier-naming.VariableCase: lower_case

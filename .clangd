@@ -1,0 +1,19 @@
+---
+Diagnostics:
+  MissingIncludes: None
+  UnusedIncludes: Strict
+
+CompileFlags:
+  Add: [
+      -Wall,
+      -Wextra,
+      -Wpedantic,
+      -Wshadow,
+      -Walign-mismatch,
+      -Wdocumentation,
+      -Wno-documentation-unknown-command,
+      -Wsign-compare,
+    ]
+  Remove: [
+      -Werror, # often leads clangd to error out and not provide diagnostics
+    ]
